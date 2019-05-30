@@ -1,6 +1,11 @@
 // LUG Camp Kasse 20XX (originally 2012) //
 
-Cash managing for soft drinks and junk food. Used at LUG Camp 2012.
+Cash managing for soft drinks and junk food. Used at LUG Camp 2018.
+
+# Develop & Run
+```
+docker-compose up -d --build
+```
 
 **What can it do?**
 
@@ -55,4 +60,3 @@ Cash managing for soft drinks and junk food. Used at LUG Camp 2012.
     * itemname
     * itemprice (integers -> cents, format in the template to EUR/USD/whatever !)
     * itemcategory (0 or 1 or 2, can be others but then you need to rewrite the html template)
-

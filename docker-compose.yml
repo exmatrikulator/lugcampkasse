@@ -1,0 +1,20 @@
+version: '2'
+services:
+  redis:
+    image: redis
+    volumes:
+      - data:/data
+      - db:/app/db
+    #restart: always
+  web:
+    build: .
+    depends_on:
+      - redis
+    ports:
+      - "80:80"
+    volumes:
+      - db:/app/db
+    #restart: always
+volumes:
+  data:
+  db:
